@@ -217,8 +217,8 @@ df.named_x_test_data &lt;- cbind(x_test_data,df.activity.label.data.test$V2, sub
   xactivitycol &lt;- df.named_x_train_test_data[grep(&quot;Activity&quot;,names(df.named_x_train_test_data))]
   xsubject &lt;- df.named_x_train_test_data[grep(&quot;Subject&quot;,names(df.named_x_train_test_data))]</code></pre>
 </div>
-<div id="combine-the-mean-std-activity-and-subjec-data-into-one-dataframe-and-find-averages-based-on-subject-and-activity.-display-the-resultant-dataframe-df.single.tidy-and-write-it-to-a-csv-file-working-directory_tidy_dataset.csv." class="section level2">
-<h2>10) Combine the mean, std, activity and subjec data into one dataframe and find averages based on subject and activity. Display the resultant dataframe (df.single.tidy) and write it to a CSV file, {working directory}_tidy_dataset.csv.</h2>
+<div id="combine-the-mean-std-activity-and-subjec-data-into-one-dataframe-and-find-averages-based-on-subject-and-activity.-display-the-resultant-dataframe-df.single.tidy-and-write-it-to-a-.txt-working-directory_tidy_dataset.txt-file-using-write.table-and-.csv-file-working-directory_tidy_dataset.csv." class="section level2">
+<h2>10) Combine the mean, std, activity and subjec data into one dataframe and find averages based on subject and activity. Display the resultant dataframe (df.single.tidy) and write it to a .txt {working directory}_tidy_dataset.txt file using write.table and .CSV file, {working directory}_tidy_dataset.csv.</h2>
 <pre class="r"><code>df.tidy.averages &lt;&lt;- cbind(xmeancols,xstdcols,xactivitycol,xsubject)
   
   df.single.tidy &lt;&lt;- sqldf(&quot;select Subject, Activity, Avg(tBodyAccmeanX) as AvgtBodyAccmeanX,
@@ -304,7 +304,8 @@ df.named_x_test_data &lt;- cbind(x_test_data,df.activity.label.data.test$V2, sub
   
   View(df.single.tidy)
   
-  write.csv(df.single.tidy, wd %&amp;% &quot;\\single_tidy_dataset.csv&quot;)</code></pre>
+  write.csv(df.single.tidy, wd %&amp;% &quot;\\single_tidy_dataset.csv&quot;)
+  write.table(df.single.tidy,wd %&amp;% &quot;\\single_tidy_dataset.txt&quot;, row.names = FALSE )</code></pre>
 </div>
 
 

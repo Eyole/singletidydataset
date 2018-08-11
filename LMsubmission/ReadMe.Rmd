@@ -107,7 +107,7 @@ df.named_x_train_test_data <<- rbind(df.named_x_train_data, df.named_x_test_data
   xsubject <- df.named_x_train_test_data[grep("Subject",names(df.named_x_train_test_data))]
 ```
 
-## 10) Combine the mean, std, activity and subjec data into one dataframe and find averages based on subject and activity. Display the resultant dataframe (df.single.tidy) and write it to a CSV file, {working directory}\single_tidy_dataset.csv.
+## 10) Combine the mean, std, activity and subjec data into one dataframe and find averages based on subject and activity. Display the resultant dataframe (df.single.tidy) and write it to a .txt {working directory}\single_tidy_dataset.txt file using write.table and .CSV file, {working directory}\single_tidy_dataset.csv.
 
 ```{r}
 df.tidy.averages <<- cbind(xmeancols,xstdcols,xactivitycol,xsubject)
@@ -196,6 +196,7 @@ df.tidy.averages <<- cbind(xmeancols,xstdcols,xactivitycol,xsubject)
   View(df.single.tidy)
   
   write.csv(df.single.tidy, wd %&% "\\single_tidy_dataset.csv")
+  write.table(df.single.tidy,wd %&% "\\single_tidy_dataset.txt", row.names = FALSE )
   
 ```
 

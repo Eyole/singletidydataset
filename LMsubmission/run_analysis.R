@@ -6,7 +6,7 @@ library(sqldf)
 
 run_analysis <<- function ()
 {
-  wd <<- getwd() %&% "\\LMsubmission"
+  wd <<- getwd()
   
   subject_train_data <<- read.table(wd %&% "\\subject_train.txt", quote="\"", comment.char = "")
   
@@ -21,6 +21,8 @@ run_analysis <<- function ()
   y_test_data <- read.table(wd %&% "\\y_test.txt", quote="\"", comment.char = "")
   
   activity_label_data <- read.table(wd %&% "\\activity_labels.txt", quote="\"", comment.char = "")
+  
+  df.features.list <<- read.table(wd %&% "\\features.txt", quote="\"", comment.char = "")
 
   df.activity.label.data.train <<- sqldf("select a.[V2], b.[V1] from [activity_label_data] a, [y_train_data] b  where a.[V1] = b.[V1]")
   
@@ -39,8 +41,6 @@ run_analysis <<- function ()
   
   df.named_x_train_test_data <<- rbind(df.named_x_train_data, df.named_x_test_data)
   
-  df.features.list <<- read.table(wd %&% "\\features.txt", quote="\"", comment.char = "")
-
   for (i in seq_along(df.features.list$V1))
   {
     
@@ -145,5 +145,6 @@ run_analysis <<- function ()
   View(df.single.tidy)
   
   write.csv(df.single.tidy, wd %&% "\\single_tidy_dataset.csv")
+  write.table(df.single.tidy,wd %&% "\\single_tidy_dataset.txt", row.names = FALSE )
   
   }
