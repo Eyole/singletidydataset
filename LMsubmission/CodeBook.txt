@@ -1,0 +1,92 @@
+When run_analysis.R is run, a dataframe, df.single.tidy is produced, it is displayed for viewing and
+output into a .csv file {Working Directory}\\single_tidy_dataset.csv
+
+The following variables are contained in the dataframe, df.single.tidy 
+
+Variable	Description
+Subject	Subjects who took part in the train & test
+Activity	Walking, Laying etc.
+AvgtBodyAccmeanX	Average of tBodyAccmeanX
+AvgtBodyAccmeanY	Average of tBodyAccmeanY
+AvgtBodyAccmeanZ	Average of tBodyAccmeanZ
+AvgtGravityAccmeanX	Average of tGravityAccmeanX
+AvgtGravityAccmeanY	Average of tGravityAccmeanY
+AvgtGravityAccmeanZ	Average of tGravityAccmeanZ
+AvgtBodyAccJerkmeanX	Average of tBodyAccJerkmeanX
+AvgtBodyAccJerkmeanY	Average of tBodyAccJerkmeanY
+AvgtBodyAccJerkmeanZ	Average of tBodyAccJerkmeanZ
+AvgtBodyGyromeanX	Average of tBodyGyromeanX
+AvgtBodyGyromeanY	Average of tBodyGyromeanY
+AvgtBodyGyromeanZ	Average of tBodyGyromeanZ
+AvgtBodyGyroJerkmeanX	Average of tBodyGyroJerkmeanX
+AvgtBodyGyroJerkmeanY	Average of tBodyGyroJerkmeanY
+AvgtBodyGyroJerkmeanZ	Average of tBodyGyroJerkmeanZ
+AvgtBodyAccMagmean	Average of tBodyAccMagmean
+AvgtGravityAccMagmean	Average of tGravityAccMagmean
+AvgtBodyAccJerkMagmean	Average of tBodyAccJerkMagmean
+AvgtBodyGyroMagmean	Average of tBodyGyroMagmean
+AvgtBodyGyroJerkMagmean	Average of tBodyGyroJerkMagmean
+AvgfBodyAccmeanX	Average of fBodyAccmeanX
+AvgfBodyAccmeanY	Average of fBodyAccmeanY
+AvgfBodyAccmeanZ	Average of fBodyAccmeanZ
+AvgfBodyAccmeanFreqX	Average of fBodyAccmeanFreqX
+AvgfBodyAccmeanFreqY	Average of fBodyAccmeanFreqY
+AvgfBodyAccmeanFreqZ	Average of fBodyAccmeanFreqZ
+AvgfBodyAccJerkmeanX	Average of fBodyAccJerkmeanX
+AvgfBodyAccJerkmeanY	Average of fBodyAccJerkmeanY
+AvgfBodyAccJerkmeanZ	Average of fBodyAccJerkmeanZ
+AvgfBodyAccJerkmeanFreqX	Average of fBodyAccJerkmeanFreqX
+AvgfBodyAccJerkmeanFreqY	Average of fBodyAccJerkmeanFreqY
+AvgfBodyAccJerkmeanFreqZ	Average of fBodyAccJerkmeanFreqZ
+AvgfBodyGyromeanX	Average of fBodyGyromeanX
+AvgfBodyGyromeanY	Average of fBodyGyromeanY
+AvgfBodyGyromeanZ	Average of fBodyGyromeanZ
+AvgfBodyGyromeanFreqX	Average of fBodyGyromeanFreqX
+AvgfBodyGyromeanFreqY	Average of fBodyGyromeanFreqY
+AvgfBodyGyromeanFreqZ	Average of fBodyGyromeanFreqZ
+AvgfBodyAccMagmean	Average of fBodyAccMagmean
+AvgfBodyAccMagmeanFreq	Average of fBodyAccMagmeanFreq
+AvgfBodyBodyAccJerkMagmean	Average of fBodyBodyAccJerkMagmean
+AvgfBodyBodyAccJerkMagmeanFreq	Average of fBodyBodyAccJerkMagmeanFreq
+AvgfBodyBodyGyroMagmean	Average of fBodyBodyGyroMagmean
+AvgfBodyBodyGyroMagmeanFreq	Average of fBodyBodyGyroMagmeanFreq
+AvgfBodyBodyGyroJerkMagmean	Average of fBodyBodyGyroJerkMagmean
+AvgfBodyBodyGyroJerkMagmeanFreq	Average of fBodyBodyGyroJerkMagmeanFreq
+AvgtBodyAccstdX	Average of tBodyAccstdX
+AvgtBodyAccstdY	Average of tBodyAccstdY
+AvgtBodyAccstdZ	Average of tBodyAccstdZ
+AvgtGravityAccstdX	Average of tGravityAccstdX
+AvgtGravityAccstdY	Average of tGravityAccstdY
+AvgtGravityAccstdZ	Average of tGravityAccstdZ
+AvgtBodyAccJerkstdX	Average of tBodyAccJerkstdX
+AvgtBodyAccJerkstdY	Average of tBodyAccJerkstdY
+AvgtBodyAccJerkstdZ	Average of tBodyAccJerkstdZ
+AvgtBodyGyrostdX	Average of tBodyGyrostdX
+AvgtBodyGyrostdY	Average of tBodyGyrostdY
+AvgtBodyGyrostdZ	Average of tBodyGyrostdZ
+AvgtBodyGyroJerkstdX	Average of tBodyGyroJerkstdX
+AvgtBodyGyroJerkstdY	Average of tBodyGyroJerkstdY
+AvgtBodyGyroJerkstdZ	Average of tBodyGyroJerkstdZ
+AvgtBodyAccMagstd	Average of tBodyAccMagstd
+AvgtGravityAccMagstd	Average of tGravityAccMagstd
+AvgtBodyAccJerkMagstd	Average of tBodyAccJerkMagstd
+AvgtBodyGyroMagstd	Average of tBodyGyroMagstd
+AvgtBodyGyroJerkMagstd	Average of tBodyGyroJerkMagstd
+AvgfBodyAccstdX	Average of fBodyAccstdX
+AvgfBodyAccstdY	Average of fBodyAccstdY
+AvgfBodyAccstdZ	Average of fBodyAccstdZ
+AvgfBodyAccJerkstdX	Average of fBodyAccJerkstdX
+AvgfBodyAccJerkstdY	Average of fBodyAccJerkstdY
+AvgfBodyAccJerkstdZ	Average of fBodyAccJerkstdZ
+AvgfBodyGyrostdX	Average of fBodyGyrostdX
+AvgfBodyGyrostdY	Average of fBodyGyrostdY
+AvgfBodyGyrostdZ	Average of fBodyGyrostdZ
+AvgfBodyAccMagstd	Average of fBodyAccMagstd
+AvgfBodyBodyAccJerkMagstd	Average of fBodyBodyAccJerkMagstd
+AvgfBodyBodyGyroMagstd	Average of fBodyBodyGyroMagstd
+AvgfBodyBodyGyroJerkMagstd	Average of fBodyBodyGyroJerkMagstd
+
+
+	
+	
+	
